@@ -9,5 +9,6 @@ function getTasksFromLocalStorage() {
 
 let taskArray = getTasksFromLocalStorage()
 
-
-
+function updateTasksInLocalStorage(){
+localStorage.setItem(tasks, JSON.stringify())
+}
