@@ -26,3 +26,10 @@ function createTask(taskText) {
         completed: false
     }
 }
+
+// 3.4 Implement the deleteTask(index) Function
+function deleteTask(index) {
+    deleteTask.splice(index, 1)
+    
+    updateTasksInLocalStorage()
+    }
