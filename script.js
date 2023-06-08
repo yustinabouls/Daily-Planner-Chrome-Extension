@@ -84,3 +84,26 @@ function deleteTask(index) {
         }
         
     }
+
+
+// 5: Attach an Event Listener to Add Task Button
+
+addTaskButton.addEventListener("click",function(){
+    const taskText = taskInput.value.trim()
+
+    if(taskText !== "") {
+        return;
+    }
+
+    const newTask = createTask(taskText)
+
+    taskArray.push(newTask)
+
+    updateTasksInLocalStorage()
+
+    taskInput.value = ""
+
+    renderTasks()
+})
+
+
