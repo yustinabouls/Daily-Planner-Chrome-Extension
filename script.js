@@ -106,4 +106,6 @@ addTaskButton.addEventListener("click",function(){
     renderTasks()
 })
 
+renderTasks()
+
 
